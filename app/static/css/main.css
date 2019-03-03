@@ -1,0 +1,18 @@
+.extra-margin-lg {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#photo-search {
+  width: 100%;
+  margin-top: 20px;
+}
+
+form>input[type="submit"] {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.extra-margin-sm {
+  padding-top: 20px;
+}

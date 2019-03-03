@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Photo Search
+{% endblock %}
+
+{% block app_content %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 offset-md-4 extra-margin-lg">
+      <form id="search_photos" class="form-inline" action="" method="post">
+        <input id="photo_search" class="form-control" type="text" name="photo" value="" placeholder="Search for photos">
+        <input id="submit-btn" class="btn btn-primary" type="submit" name="submit" value="Submit">
+
+      </form>
+
+    </div> <!-- end col -->
+  </div> <!-- end row -->
+
+  <div id="card-container" class="row">
+
+    </div>
+</div> <!-- end container -->
+
+
+
+{% endblock %}

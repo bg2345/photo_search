@@ -1,0 +1,35 @@
+{% extends 'bootstrap/base.html' %}
+
+
+{% block title %}Photo Search{% endblock %}
+
+
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="../static/css/main.css">
+{% endblock %}
+
+
+{% block scripts %}
+  {{ super() }}
+
+  <!-- attach jQuery cdn after supering, bootstrap default jQuery is slim, we need minified -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script src="../static/js/app.js"></script>
+{% endblock %}
+
+{% block navbar %}
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="{{ url_for('index') }}">Photo Search</a>
+  </nav>
+{% endblock %}
+
+{% block content %}
+
+  {% block app_content %}{% endblock %}
+
+{% endblock %}
